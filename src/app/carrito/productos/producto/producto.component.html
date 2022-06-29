@@ -1,0 +1,7 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="producto.imagen" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{producto.nombre}}</h5>
+        <a [routerLink]="['/producto', producto.id]" class="btn btn-primary">Ver detalle</a>
+    </div>
+</div>

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CategoriasComponent } from './carrito/categorias/categorias.component';
 import { ListadoComponent } from './carrito/productos/listado/listado.component';
 import { DetalleComponent } from './carrito/productos/detalle/detalle.component';
-import { ProductoComponent } from './productos/producto/producto.component';
+import { ProductoComponent } from './carrito/productos/producto/producto.component';
 
 @NgModule({
   declarations: [
