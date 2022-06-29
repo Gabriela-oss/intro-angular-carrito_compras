@@ -1,5 +1,5 @@
 <ul>
-    <li *ngFor="let categoria of categorias" class="nav-link">
+    <li *ngFor="let categoria of c.categorias" class="nav-link">
         <a [routerLink]="['/categoria', categoria.id]">{{categoria.nombre}}</a>
     </li>
 </ul>

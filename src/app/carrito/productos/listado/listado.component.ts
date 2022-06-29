@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router'
 import { CategoriasService } from 'src/app/categorias.service';
 import { ProductosService } from 'src/app/productos.service';
-import { Categoria } from '../../categoria';
+//import { Categoria } from '../../categoria';
 import { Producto } from '../../producto';
 
 @Component({
@@ -16,10 +16,10 @@ export class ListadoComponent implements OnInit {
 
   productos_cat:Producto[] = [];
   
-  categorias:Categoria[];
+ // categorias:Categoria[];
 
-  constructor(private ruta:ActivatedRoute, c:CategoriasService, p:ProductosService){
-    this.categorias = c.categorias;
+  constructor(private ruta:ActivatedRoute, p:ProductosService){
+    //this.categorias = c.categorias;
     this.productos = p.productos;
 
     ruta.paramMap.subscribe((p:ParamMap)=>{
